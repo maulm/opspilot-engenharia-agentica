@@ -1,0 +1,8 @@
+1. Ler o incidente INC-2041 em /base/incidentes/INC-2041.md e identificar serviço(s), impacto e janela temporal.
+2. Ler o formato padrão em /memoria/AGENTS.md e confirmar a estrutura do post-mortem.
+3. Delegar investigação em paralelo: analista-de-logs por serviço, pesquisador-de-runbooks e triagem-fsm.
+4. Salvar evidências recebidas em /notas/*.md para cada tema/serviço.
+5. Consolidar diagnóstico, causa raiz, linha do tempo e impactos no relatório em /relatorios/postmortem-INC-2041.md.
+6. Reler o relatório e autocorrigir números/afirmações cruzando com /notas/ e fontes.
+7. Atualizar /memoria/AGENTS.md com uma lição aprendida se houver padrão reutilizável.
+8. Abrir ticket do incidente com diagnóstico validado e severidade correta.

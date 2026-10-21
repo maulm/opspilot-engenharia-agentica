@@ -25,3 +25,5 @@
 
 ## Lições aprendidas (o agente acrescenta abaixo, 1 linha por lição)
 - Fila de notificações crescendo costuma ser efeito colateral de retries da API produtora.
+- Mudanças de configuração de pool em banco precisam de validação explícita de limite e variável obrigatória, porque `DB_POOL_MAX` ausente pode derrubar serviços dependentes por esgotamento do pool.
+- Redução de pool por mudança de configuração pode causar 503 no checkout sem CPU alta; sempre correlacionar `PoolTimeout` no app com `cl_waiting` e limites do proxy de banco.
